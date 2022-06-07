@@ -1,0 +1,40 @@
+.navigation {
+
+    @extend %flex;
+
+    &__list {
+
+        @extend %flex;
+
+    }
+
+    &__item+&__item {
+        margin-left: 50px;
+    }
+
+    &__link-studio {
+        @include fonts(null,null,500,14px,1.14,0.02em)
+
+        text-decoration: none;
+
+        color: var(--header-link-studio);
+    }
+
+    &__link {
+        @include fonts(null, null, 500, 14px, 1.14, 0.02em)
+        text-decoration: none;
+        color:var(--header-link);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--logo-color);
+    }
+
+    &__link-studio:hover,
+    &__link-studio:focus {
+        color: var(--logo-color);
+    }
+
+}
+

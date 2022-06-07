@@ -1,0 +1,54 @@
+.contact {
+
+    @extend %flex;
+
+    
+    margin-left: 285px ;
+
+
+    &__item + &__item {
+        margin-left: 50px;
+    }
+
+    &__mail-icon {
+        margin-right: 10px;
+        vertical-align: middle;
+        fill: currentColor;
+    }
+
+    &__tel-icon {
+        margin-right: 10px;
+        vertical-align: middle;
+        fill: currentColor;
+    }
+
+}
+
+.contact__link-mail {
+
+    @include fonts (Roboto, normal, 500, 14px, 1.14, 0.02em);
+
+    color: var(--header-link_mail);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+
+}
+
+.contact__link-tel {
+
+    @include fonts (Roboto, normal, 500, 14px, 1.14, 0.02em);
+
+    color: var(--header-link-tel);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+
+}
+
+
+

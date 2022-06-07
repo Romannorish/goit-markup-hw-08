@@ -1,0 +1,41 @@
+.address__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin: 0px;
+    }
+
+}
+
+
+.address__list {
+    margin-top: 20px;
+}
+
+
+.address__tel {
+
+    @include fonts (Roboto, normal, normal, 14px, 1.71, 0.03em);
+
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+}
+
+
+.address__mail{
+
+    @include fonts (Roboto, normal, normal, 14px, 1.71, 0.03em);
+
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
+}
+
+

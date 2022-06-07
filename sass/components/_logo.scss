@@ -1,0 +1,21 @@
+.logo {
+
+
+    @include fonts(Raleway,null,700,26px,1.19,0.03em)
+
+    color: var(--logo-color);
+
+&__first {
+        margin-right: 93px;
+    }
+
+
+&__second {
+
+    @include fonts(Raleway, null, 700, 26px, 1.19, 0.03em)
+
+    color: var(--second-logo-color);
+}
+
+}
+
