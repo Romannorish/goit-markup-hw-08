@@ -4,13 +4,43 @@
 
 
     &__list {
-        display: flex;
-        justify-content: center;
+
+        @include mq(mobile) {
+            display: block;
+            justify-content: center;
+        }
+        @include mq(tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include mq(desktop) {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
     }
 
     &__item + &__item {
         margin-left: 30px;
     }
+    
+    &__item{
+        @include mq(tablet-only){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item:last-child{
+
+        @include mq(tablet-only){
+            margin-right: 30px;
+        }
+
+    }
+        
 
     &__card {
         padding-top: 30px;

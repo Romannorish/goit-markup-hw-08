@@ -3,16 +3,34 @@
 
 
     &__list {
-        @extend %flex;
+        @include mq(mobile){
+            display: block;
+        }
+        
+        @include mq(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+         }
+        @include mq(desktop){
+        display: flex;
+        align-items: center;
+        }
     }
 
     &__item {
         width: 270px;
         margin-right: 30px;
+        @include mq(mobile-only){
+            max-width: 100%;
+        }
     }
 
     &__item:last-child {
         margin-right: 0px;
+        @include mq(tablet-only) {
+            margin-right: 30px;
+        }
     }
 
     &__title {
@@ -20,15 +38,24 @@
     }
 
     &__icon {
-
-        @extend %flex;
-
+        display: flex;
+        align-items: center;
         justify-content: center;
         width: 270px;
         height: 120px;
         margin-bottom: 30px;
         background-color: #f5f4fa;
         border-radius: 4px;
+
+
+        @include mq(mobile-only) {
+        width: 450px;}
+        
+        @include mq(tablet-only) {
+        width: 354px;
+        }
+
+
     }
 
     &__icon-svg {
@@ -37,7 +64,11 @@
     }
 
     &__title {
-
+        @include mq(mobile-only) {
+            width: 450px;
+            display: flex;
+            justify-content: center;
+        }
         @include fonts (Roboto, null, null, 14px, 1.14, 0.03em);
 
         text-transform: uppercase;
@@ -45,10 +76,18 @@
     }
 
     &__text {
-
+        
         @include fonts (Roboto, null, null, 14px, 1.71, 0.03em);
 
         color: var(--main-text);
+
+        @include mq(mobile-only) {
+                margin-bottom: 30px;
+                width: 450px;
+            }
+        @include mq(tablet-only) {
+            margin-bottom: 30px;
+        }
     }
 }
 

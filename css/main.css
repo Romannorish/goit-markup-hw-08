@@ -24,7 +24,7 @@
   --footer-address: #ffffff;
 }
 
-.navigation, .navigation__list, .contact, .features__list, .features__icon, .about__list, .team__socials-link, .agreement__text, .header__container {
+.navigation, .navigation__list, .contact, .about__list, .team__socials-link, .agreement__text, .header__container {
   display: flex;
   align-items: center;
 }
@@ -71,11 +71,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -218,13 +235,46 @@ body {
   padding: 94px 0px 0px;
 }
 
+@media screen and (min-width: 480px) {
+  .features__list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .features__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .features__item {
   width: 270px;
   margin-right: 30px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .features__item {
+    max-width: 100%;
+  }
+}
+
 .features__item:last-child {
   margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .features__item:last-child {
+    margin-right: 30px;
+  }
 }
 
 .features__title {
@@ -232,12 +282,26 @@ body {
 }
 
 .features__icon {
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .features__icon {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .features__icon {
+    width: 354px;
+  }
 }
 
 .features__icon-svg {
@@ -254,12 +318,33 @@ body {
   color: var(--main-h);
 }
 
+@media screen and (max-width: 767.98px) {
+  .features__title {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .features__text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text);
+}
+
+@media screen and (max-width: 767.98px) {
+  .features__text {
+    margin-bottom: 30px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .features__text {
+    margin-bottom: 30px;
+  }
 }
 
 .about {
@@ -307,13 +392,42 @@ body {
   background-color: var(--team-background-color);
 }
 
-.team__list {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  .team__list {
+    display: block;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .team__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .team__item + .team__item {
   margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .team__item:last-child {
+    margin-right: 30px;
+  }
 }
 
 .team__card {
@@ -394,13 +508,55 @@ body {
   padding-bottom: 94px;
 }
 
-.clients__list {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 767.98px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .clients__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .clients__item + .clients__item {
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .clients__item + .clients__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .clients__item:first-child {
+    margin-left: 30px;
+  }
+  .clients__item:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .clients__item + .clients__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .clients__item:last-child {
+    margin-right: 30px;
+  }
 }
 
 .clients__icon {
