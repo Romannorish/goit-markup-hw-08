@@ -1,13 +1,32 @@
 .contact {
 
     @extend %flex;
-
     
-    margin-left: 285px ;
 
+    @include mq(mobile) {}
+    
+    @include mq(tablet-only) {
+        display: block;
+        margin-left: 88px;
+    }
+
+    &__item{
+        margin-left: 285px;
+
+        @include mq(tablet-only){
+            margin: 0;
+        }
+
+       
+    }
 
     &__item + &__item {
         margin-left: 50px;
+
+        @include mq(tablet-only) {
+                margin: 0;
+            }
+       
     }
 
     &__mail-icon {
@@ -25,6 +44,7 @@
 }
 
 .contact__link-mail {
+    display: flex;
 
     @include fonts (Roboto, normal, 500, 14px, 1.14, 0.02em);
 
@@ -38,6 +58,7 @@
 }
 
 .contact__link-tel {
+    display: flex;
 
     @include fonts (Roboto, normal, 500, 14px, 1.14, 0.02em);
 

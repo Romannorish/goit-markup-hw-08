@@ -3,9 +3,8 @@
     @extend %flex;
 
     &__list {
-
         @extend %flex;
-
+        
     }
 
     &__item+&__item {

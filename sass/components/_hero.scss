@@ -1,4 +1,13 @@
 .hero {
+        @include mq(mobile-only) {
+        max-width: 480px;
+        }
+    
+        @include mq(tablet) {
+        max-width: 768;
+        }
+
+
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -8,7 +17,6 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png)
-    
     
 }
  

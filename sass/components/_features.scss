@@ -12,6 +12,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
          }
+         
         @include mq(desktop){
         display: flex;
         align-items: center;
@@ -21,9 +22,7 @@
     &__item {
         width: 270px;
         margin-right: 30px;
-        @include mq(mobile-only){
-            max-width: 100%;
-        }
+       
     }
 
     &__item:last-child {
@@ -69,6 +68,11 @@
             display: flex;
             justify-content: center;
         }
+
+        @include mq(tablet-only) {
+            width: 354px;
+        }
+
         @include fonts (Roboto, null, null, 14px, 1.14, 0.03em);
 
         text-transform: uppercase;
@@ -86,6 +90,7 @@
                 width: 450px;
             }
         @include mq(tablet-only) {
+            width: 354px;
             margin-bottom: 30px;
         }
     }
