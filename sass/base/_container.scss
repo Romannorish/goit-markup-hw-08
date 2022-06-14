@@ -3,18 +3,20 @@ body {
 }
 
 .container {
+
     padding-left: 15px;
     padding-right: 15px;
 
     margin-left: auto;
     margin-right: auto;
 
+
     @include mq(mobile) {
         width: 480px;
     }
 
     @include mq(tablet) {
-    width: 720px;
+    width: 768px;
     }
 
     @include mq(desktop) {
@@ -22,3 +24,25 @@ body {
     }
 
 }
+
+
+    // @media screen and (min-width: 480px) {
+    //         width: 448px;
+    //     }
+
+
+
+    // @include mq(mobile) {
+    //     width: 448px;
+    // }
+
+    // @include mq(tablet) {
+    //     width: 720px;
+    // }
+
+    // @include mq(desktop) {
+    //     width: 1200px;
+    // }
+
+
+

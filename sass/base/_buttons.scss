@@ -2,7 +2,6 @@
 .btn {
     
     @include fonts (Roboto,normal,bold,16px,1.87,0.06em);
-
     background-color: var(--btn-back);
     color: var(--btn-color);
     cursor: pointer;
