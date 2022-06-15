@@ -4,14 +4,43 @@
     background-color: var(--footer-background);
 
         &__container {
-            display: flex;
-            align-items: baseline;
+
+
+
+            @include mq(mobile-only) {display: block;}
+            
+                @include mq(tablet-only) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            
+                @include mq(desktop) {
+                    display: flex;
+                    align-items: baseline;}
         }
     
     
         &__color-logo {
             color: var(--footer-color-logo);
         }
+}
+
+
+.footer-content{
+    
+}
+.footer__logo{
+    @include mq(mobile-only) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px
+        }
+                 @include mq(tablet-only) {
+                     display: flex;
+                     margin-bottom: 20px
+                     
+                 }
 }
 
 .footer__address {
@@ -30,11 +59,31 @@
 }
 
 
+
 .footer__subscribe {
     margin-left: 70px;
 
+
+
+    @include mq(tablet-only) {
+            margin-left: 165px;
+            
+        }
+
+
+    @include mq(mobile-only) {
+            margin: 0;
+    
+        }
+
     &-list {
         display: flex;
+        @include mq(mobile-only) {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 60px;
+            }
+
     }
 
     &-item + &-item {
@@ -55,6 +104,12 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @include mq(mobile-only) {
+                display: flex;
+                justify-content: center;
+            }
+
     }
 }
 
@@ -81,17 +136,48 @@
 .footer__form {
     margin-left: 93px;
 
+    @include mq(mobile-only) {
+            margin: 0;
+        }
+
+                @include mq(tablet-only) {
+                    margin-top: 60px;
+                }
+    
+
     &-title {
 
         @include fonts(null, 400, 700, 14px, 1.14, 0.03em);
         text-transform: uppercase;
         color: #ffffff;
         margin-bottom: 20px;
+
+        @include mq(mobile-only) {
+                display: flex;
+                justify-content: center;
+            }
+                        @include mq(tablet-only) {
+                            display: flex;
+                            justify-content: center;
+                        }
     }
 
     &-sub {
+
         display: flex;
         align-items: center;
+
+        @include mq(mobile-only) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            }
+
+            @include mq(tablet-only) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
     }
 
     &-email {
@@ -105,6 +191,17 @@
         background-color: transparent;
         padding-left: 16px;
         color: #ffffff;
+
+        @include mq(mobile-only) {
+                margin-bottom: 30px;
+                width: 450px;
+            }
+
+                        @include mq(tablet-only) {
+                            margin-bottom: 30px;
+                            width: 450px;
+                        }
+
     }
 
     &-button {
