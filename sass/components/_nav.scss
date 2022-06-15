@@ -4,6 +4,10 @@
 
     &__list {
         @extend %flex;
+
+        @include mq(mobile-only) {
+            display: none;
+        }
         
     }
 

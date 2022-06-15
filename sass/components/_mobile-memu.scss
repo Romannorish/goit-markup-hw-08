@@ -1,5 +1,5 @@
 .mobile-menu {
-    // position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,22 +30,32 @@
     color: #212121;
     }
 
+        &__link:hover,
+        &__link:focus{
+            color: #2196F3;
+        }
+
     &__item{
         margin-bottom: 32px;
 
     }
+        &__item:last-child{
+            margin: 0;
+        }
 }
 
 
-.mobile-contatcts{
-    margin-top: auto;
 
+.mobile-contatcts{
+margin-top: auto;
 
 &__item{
     margin-bottom: 32px;
 }
 
+
 &__link {
+   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -53,7 +63,25 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #2196F3;
+}
+
+&__linkmail{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+
+}
+
+
+&__link:hover,
+&__link:focus {
+    color: #2196F3;
 }
 
 
@@ -88,3 +116,33 @@ display: flex;
 
 }
 
+
+.mobile-menu__close{
+background-color: #fff;
+width: min-content;
+margin-left: auto;
+border: none;
+
+}
+
+
+.mobile__close-icon:hover,
+.mobile__close-icon:focus{
+    fill: #2196F3;
+}
+
+.mobile-menu__open{
+    background-color: #fff;
+    width: min-content;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+
+    @include mq(tablet) {
+        display: none;
+    }
+    
+    @include mq(desktop) {
+        display: none;
+    }
+}
