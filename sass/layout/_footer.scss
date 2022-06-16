@@ -28,7 +28,11 @@
 
 
 .footer-content{
+    @include mq(tablet-only) {
+            display: block;
+            text-align: center;
     
+        }
 }
 .footer__logo{
     @include mq(mobile-only) {
@@ -37,8 +41,10 @@
             margin-bottom: 20px
         }
                  @include mq(tablet-only) {
-                     display: flex;
+                     display: block;
+                     text-align: center;
                      margin-bottom: 20px
+                     
                      
                  }
 }
@@ -66,7 +72,9 @@
 
 
     @include mq(tablet-only) {
-            margin-left: 165px;
+            display: block;
+            text-align: center;
+            margin-left: 204px;
             
         }
 
@@ -104,6 +112,8 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        
+
 
         @include mq(mobile-only) {
                 display: flex;

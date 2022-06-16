@@ -18,7 +18,7 @@
 <!--my content-->
 <body>
   <!--navigation section-->
-   <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
     <nav class="navigation">
       <a href="./index.html" class="logo logo__first">Web<span class="logo__second">Studio</span></a>
@@ -42,34 +42,20 @@
         <use href="./svgicons/icons.svg#smartphone"></use>
       </svg>+38 096 111 11 11</a></li>
     </ul>
-    <button type="button" class="mobile-menu__open" data-modal-open>
-      <svg class="mobile__open-icon" width="40" height="40">
-        <use href="./svgicons/mobile-menu.svg.svg#menu_mobile"></use>
-      </svg>
-    </div>
-  </header> -->
+  </header>
 
   
 <main>
-  <!-- hero section -->
-
   <!--hero section-->
-
-
-
-  <!-- <section class="hero">
+  <section class="hero">
     <div class="container hero__container">
     <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
     <div class="btn-container">
-    <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+    <button type="button" class="btn" data-modal-open >Заказать услугу</button>
     </div>
    </div>
-  </section> -->
+  </section>
       <!--features section-->
-
-  <!-- <section class="features">
-
-
   <section class="features">
 
     <div class="container features__container">
@@ -112,17 +98,11 @@
     </li>
   </ul>
   </div>
-<<<<<<< Updated upstream
-</section> -->
+
+</section> 
   <!--about company section-->
-    <!-- <section class="about">
-=======
-</section>
-
-  <!- about company section-->
-
-
-     <!-- <section class="about">
+    
+     <section class="about">
 
       <div class="container about__container">
     <h2 class="about__title">Чем мы занимаемся</h2>
@@ -135,10 +115,10 @@
         alt="демонстрация работы программ на гаджетах" width="370" height="294"><p class="about__text">Дизайнерские решения</p></li>
     </ul>
     </div>
-    </section> -->
+    </section> 
 
         <!--team section-->
-<!-- <section class="team">
+<section class="team">
   <div class="container team__container">
   <h2 class="team__title">Наша команда</h2>
   <ul class="team__list">
@@ -289,11 +269,11 @@
           </li>
         </ul>
   </div>
-</section> -->
+</section>
 
 <!-- clients section -->
  
-<!-- <section class="clients">
+<section class="clients">
 <div class="container clients__container">
 <h2 class="clients__title">Постоянные клиенты</h2>
 <ul class="clients__list">
@@ -342,7 +322,7 @@
 </ul>
 </div>
 
-</section> -->
+</section> 
 
 </main>
 <!--footer section-->
@@ -416,7 +396,7 @@ placeholder="E-mail">
 
 <!-- modal window -->
 
-<!-- <div class="backdrop is-hidden" data-modal>
+ <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal__close" data-modal-close>
       <svg class="modal__close-icon">
@@ -488,12 +468,15 @@ placeholder="E-mail">
     </form>
   </div>
 </div>
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script> 
+
+
 <!-- mobile menu -->
-<!-- <div class="mobile-menu">
-  <button type="button" class="mobile-menu__close" data-modal-close>
-    <svg class="mobile__close-icon" width="40" height="40">
-      <use href="./svgicons/mobile-menu.svg.svg#close_mobile"></use>
+ <div class="mobile-menu is-open" data-menu>
+  <button type="button" class="mobile-menu__btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+    <svg width="40" height="40">
+      <use class="menu_open" href="./svgicons/mobile-menu.svg.svg#menu_mobile"></use>
+      <use class="menu_close" href="./svgicons/mobile-menu.svg.svg#close_mobile"></use>
     </svg>
   </button>
   <ul class="mobile-menu__nav">

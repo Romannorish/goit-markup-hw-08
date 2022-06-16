@@ -1,4 +1,6 @@
 .mobile-menu {
+    display: none;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -115,23 +117,19 @@ display: flex;
 
 
 }
-
-
-.mobile-menu__close{
-background-color: #fff;
-width: min-content;
-margin-left: auto;
-border: none;
-
+.mobile-menu .menu_close {
+    display: none;
 }
 
-
-.mobile__close-icon:hover,
-.mobile__close-icon:focus{
-    fill: #2196F3;
+.mobile-menu .is-open .menu_close {
+    display: block;
 }
 
-.mobile-menu__open{
+.mobile-menu .is-open .menu_open {
+    display: none;
+}
+
+.mobile-menu__btn{
     background-color: #fff;
     width: min-content;
     margin-left: auto;
@@ -139,10 +137,16 @@ border: none;
     padding: 0;
 
     @include mq(tablet) {
-        display: none;
-    }
-    
-    @include mq(desktop) {
-        display: none;
-    }
+            display: none;
+        }
+
+        @include mq(desktop) {
+            display: none;
+        }
+}
+
+
+.mobile-menu__btn:hover,
+.mobile-menu__btn:focus{
+    fill: #2196F3;
 }

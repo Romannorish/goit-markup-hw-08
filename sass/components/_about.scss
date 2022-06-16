@@ -1,4 +1,13 @@
 .about {
+
+    @include mq(mobile-only) {
+        display: none;
+    }
+    
+    @include mq(tablet-only) {
+        display: none;
+    }
+
     padding-top: 94px;
     padding-bottom: 94px;
 
