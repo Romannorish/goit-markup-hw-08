@@ -22,6 +22,48 @@
     <div class="container header__container">
     <nav class="navigation">
       <a href="./index.html" class="logo logo__first">Web<span class="logo__second">Studio</span></a>
+      <button type="button" class="mobile-menu__btn is-open" data-menu-button aria-expanded="true" aria-controls="mobile-menu"
+        >
+        <svg width="40" height="40">
+          <use class="menu_close" href="./svgicons/mobile-menu.svg.svg#close_mobile"></use>
+          <use class="menu_open" href="./svgicons/mobile-menu.svg.svg#menu_mobile"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-contatcts">
+          <li class="mobile-contatcts__item">
+            <a href="tel:+380961111111" class="mobile-contatcts__link">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contatcts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contatcts__linkmail">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Instagram </a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a href="./index.html" class="navigation__link-studio current">Студия</a></li>
@@ -472,13 +514,14 @@ placeholder="E-mail">
 
 
 <!-- mobile menu -->
- <div class="mobile-menu is-open" data-menu>
-  <button type="button" class="mobile-menu__btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
-    <svg width="40" height="40">
-      <use class="menu_open" href="./svgicons/mobile-menu.svg.svg#menu_mobile"></use>
-      <use class="menu_close" href="./svgicons/mobile-menu.svg.svg#close_mobile"></use>
-    </svg>
-  </button>
+  <div class="mobile-menu" id="mobile-menu" data-menu>
+    <button type="button" class="mobile-menu__btn is-open" aria-expanded="true" aria-controls="mobile-menu"
+      data-menu-button>
+      <svg width="40" height="40">
+        <use class="menu_close" href="./svgicons/mobile-menu.svg.svg#close_mobile"></use>
+        <use class="menu_open" href="./svgicons/mobile-menu.svg.svg#menu_mobile"></use>
+      </svg>
+    </button>
   <ul class="mobile-menu__nav">
     <li class="mobile-menu__item">
       <a href="" class="mobile-menu__link">Студия</a>
@@ -512,7 +555,7 @@ placeholder="E-mail">
       <a href="" class="mobile-socials__link">LinkedIn</a>
     </li>
   </ul>
-</div> -->
-
+</div> 
+<script src="./js/mobile_menu.js"></script>
 </body>
 </html>
