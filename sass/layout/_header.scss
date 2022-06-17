@@ -2,12 +2,13 @@
     position: relative;
     padding: 24px 0px 25px 0px;
     border-bottom: 1px solid #eeeeee;
+
 }
 
 
 .header__container {
     @extend %flex;
-    
+
 }
 
 .pages {

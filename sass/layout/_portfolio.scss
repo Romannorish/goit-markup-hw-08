@@ -38,13 +38,26 @@
 
 
 .srevies {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+@include mq(mobile-only) {
+    display: block;
+}
+
+@include mq(tablet-only) {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+        flex-wrap: wrap;
+}
+
+
+    @include mq(desktop) {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+   
 
 
     &__card {
@@ -84,9 +97,12 @@
 
 
 .srevies__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    
+    @include mq(desktop){
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+    }
 
     &:hover,
     &:focus {
