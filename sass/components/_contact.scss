@@ -48,6 +48,10 @@
 .contact__link-mail {
     display: flex;
 
+    @include mq(tablet-only) {
+            margin-bottom: 10px;
+        }
+
     @include fonts (Roboto, normal, 500, 14px, 1.14, 0.02em);
 
     color: var(--header-link_mail);

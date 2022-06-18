@@ -38,6 +38,16 @@
             @content;
         }
     }
+
+
+    @if $type == "retina" {
+
+        @media (min-device-pixel-ratio:2) , (min-resolution: 192dpi) , (min-resolution: 2dppx) {
+            @content;
+        }
+        
+        
+    }
 }
 
 
@@ -57,5 +67,6 @@
 @include mq(tablet){}
 
 @include mq(desktop) {}
-  
+
+@include mq(retina) {}
 

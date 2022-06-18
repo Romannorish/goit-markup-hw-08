@@ -237,6 +237,12 @@ body {
   color: var(--header-link_mail);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .contact__link-mail {
+    margin-bottom: 10px;
+  }
+}
+
 .contact__link-mail:hover, .contact__link-mail:focus {
   color: var(--logo-color);
 }
@@ -290,6 +296,18 @@ body {
 
 .features {
   padding: 94px 0px 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .features {
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .features {
+    padding: 60px 0px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -475,6 +493,18 @@ body {
   background-color: var(--team-background-color);
 }
 
+@media screen and (max-width: 767.98px) {
+  .team {
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .team {
+    padding: 60px 0px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team__list {
     display: block;
@@ -595,6 +625,18 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .clients {
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .clients {
+    padding: 60px 0px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {

@@ -2,6 +2,13 @@
     padding: 94px 0px 94px 0px;
     background-color: var(--team-background-color);
 
+    @include mq(mobile-only){
+        padding: 60px 0px;
+    }
+
+        @include mq(tablet-only) {
+            padding: 60px 0px;
+        }
 
     &__list {
 

@@ -1,6 +1,13 @@
 .features {
     padding: 94px 0px 0px;
 
+    @include mq(mobile-only) {
+            padding: 60px 0px;
+        }
+
+                @include mq(tablet-only) {
+                    padding: 60px 0px;
+                }
 
     &__list {
         @include mq(mobile){
