@@ -1,146 +1,144 @@
-.menu-button{
-    display: none;
+.menu__button {
+    display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     margin-left: auto;
-    padding-top: 10px;
-
-    transform: translate(100%);
 
     @include mq(tablet) {
         display: none;
     }
 
+    @include mq(desktop) {
+            display: none;
+        }
+
+    &:hover,
+    &:focus {
+        fill: #2196f3;
+    }
+
     z-index: 1000;
 }
 
-
-
-// .menu-button .menu_open {
-//     display: none;
-// }
-
-.menu-button .is-open .menu_open {
-    display: block;
-}
-
-// .menu-button .menu_close {
-//     display: none;
-// }
-
-
-.menu-container{
-position: absolute;
-
-top: 0;
-width: 100vw;
-height: 100vh;
-left: 0;
-z-index: 900;
-
-background-color: #fff;
-padding: 48px 40px;
-
-@include mq(tablet) {
+.menu__button .menu__icon {
     display: none;
 }
 
-& .is-open {
+.menu__button.is-open .menu__icon {
     display: block;
 }
 
-flex-direction: column;
-justify-content: space-between;
+.menu__button.is-open .menu__close {
+    display: none;
 }
 
+.menu-container {
+    display: none;
+    position: absolute;
 
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: 900;
 
-.mobile-menu__item{
+    background-color: #fff;
+    padding: 48px 40px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open {
+        display: flex;
+    }
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-nav__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.mobile-menu__link{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #212121;
-}
-
-.mobile-menu__link:hover,
-.mobile-menu__link:focus{
-    color: #2196F3;
-}
-
-.mobile-contatcts{
-    margin-top: auto;
-}
-.mobile-contatcts {
-
-    &__item {
-        margin-bottom: 32px;
-    }
-
-
-    &__link {
-
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #2196F3;
-    }
-
-    &__linkmail {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-
-        color: #757575;
-
-    }
-
+.menu-nav__link {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
 
    
+}
 
+.menu-nav__link:hover,
+.menu-nav__link:focus {
+    color: #2196f3;
+}
+
+.menu-contacts {
+    margin-top: auto;
+}
+
+.menu-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-contacts__phone {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196f3;
 }
 
 
-.mobile-socials {
-    margin-top: 32px;
+.menu-contacts__mail {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+
+.menu-socials {
     display: flex;
-
-    &__item+&__item {
-
-        padding-left: 10px;
-        border-left: 1px solid rgba(33, 33, 33, 0.2);
-        margin-left: 10px;
-    }
-
-    &__link {
-
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-
-        color: #2196F3;
-    }
-
+    margin: 0;
+    margin-top: 64px;
+    padding-right: auto;
 
 }
 
+.menu-socials__link {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+}
 
+
+.menu-socials__item + .menu-socials__item{
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+
+}

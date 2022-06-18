@@ -7,6 +7,10 @@
 
 &__first {
         margin-right: 93px;
+            
+        @include mq(mobile-only){
+            margin: 0;
+        }
 
         @include mq(tablet-only) {
             margin-right: 88px;

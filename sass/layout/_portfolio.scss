@@ -2,16 +2,36 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
+
     &__list {
         display: flex;
         list-style: none;
         justify-content: center;
         margin-bottom: 50px;
+
+
+        @include mq(mobile-only) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+
+
     }
 
     &__item + &__item {
         margin-left: 8px;
+
     }
+        @include mq(mobile-only){
+
+            &__item{
+                margin-bottom: 15px;
+            }
+                &__item:nth-child(4) {
+            margin: 0;
+        }
+                }
 }
 
 .portfolio__btn {
@@ -43,8 +63,7 @@
 }
 
 @include mq(tablet-only) {
-    display: flex;
-        flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
 }
 
 
@@ -98,6 +117,11 @@
 
 .srevies__item {
     
+    @include mq(tablet-only){
+        width: calc((100% - 2* 30px) /2);
+        margin: 15px;
+    }
+
     @include mq(desktop){
         margin-left: 30px;
         margin-top: 30px;
