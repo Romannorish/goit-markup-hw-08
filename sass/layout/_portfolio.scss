@@ -55,6 +55,9 @@
     }
 }
 
+@include mq(tablet-only){
+img{ max-width: 354px;}
+}
 
 
 .srevies {
@@ -63,7 +66,12 @@
 }
 
 @include mq(tablet-only) {
-    flex-basis: calc(100% / 2 - 30px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 
@@ -118,11 +126,12 @@
 .srevies__item {
     
     @include mq(tablet-only){
-        width: calc((100% - 2* 30px) /2);
-        margin: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
     }
 
-    @include mq(desktop){
+    @include mq(desktop-only){
         margin-left: 30px;
         margin-top: 30px;
         flex-basis: calc(100% / 3 - 30px);

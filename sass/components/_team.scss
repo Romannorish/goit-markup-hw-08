@@ -10,49 +10,49 @@
             padding: 60px 0px;
         }
 
-    &__list {
-
-
-        @include mq(mobile) {
-            display: block;
-            justify-content: center;
-        }
-        @include mq(tablet) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        @include mq(desktop) {
-            display: flex;
-            justify-content: center;
-
-        }
-
-
-    }
-
-    &__item + &__item {
-        margin-left: 30px;
-    }
+        &__list {
+            // display: flex;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 0px;
     
-    &__item{
-        @include mq(tablet-only){
-            margin-bottom: 30px;
-        }
-                @include mq(mobile-only){
-                    margin-bottom: 30px;
+            @media screen and (min-width: 480px) {
                 width: 450px;
-                }
-
-    }
-
-    &__item:last-child{
-
-        @include mq(tablet-only){
-            margin-right: 30px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                width: 738px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 1200px;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+    
         }
-
-    }
+    
+    
+        &__item {
+            @media screen and (min-width: 480px) {
+                width: auto;
+                margin-bottom: 30px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 3 * 30px) / 2);
+                margin-right: 30px;
+            }
+        }
+    
+        &__item:not(:last-child) {
+            @media screen and (min-width: 1200px) {
+                margin-right: 30px;
+            }
+        }
 
     &__card {
         padding-top: 30px;
