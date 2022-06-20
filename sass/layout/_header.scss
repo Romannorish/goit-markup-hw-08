@@ -6,6 +6,10 @@
     padding: 24px 0px 25px 0px;
     border-bottom: 1px solid #eeeeee;
 
+    @include mq(mobile-only) {
+        padding: 16px 0px;
+    }
+
 }
 
 

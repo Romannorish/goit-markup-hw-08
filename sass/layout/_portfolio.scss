@@ -2,6 +2,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
+    @include mq(tablet-only) {
+        padding-top: 66px;
+        padding-bottom: 66px;
+
+    }
+
 
     &__list {
         display: flex;
@@ -53,10 +59,6 @@
         color: white;
         background-color: var(--logo-color);
     }
-}
-
-@include mq(tablet-only){
-img{ max-width: 354px;}
 }
 
 
@@ -124,17 +126,19 @@ img{ max-width: 354px;}
 
 
 .srevies__item {
+
+    @include mq(mobile-only){
+        display: block;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
     
     @include mq(tablet-only){
+    width: 354px;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
-    }
-
-    @include mq(desktop-only){
-        margin-left: 30px;
-        margin-top: 30px;
-        flex-basis: calc(100% / 3 - 30px);
     }
 
     &:hover,
@@ -147,6 +151,7 @@ img{ max-width: 354px;}
 
 
 .srevies__item {
+    width: 370px;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 3 - 30px);
