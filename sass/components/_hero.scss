@@ -18,40 +18,41 @@
     background-size: cover;
 
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__sm.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__sm.jpg);
 
  
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
     
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__sm@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__sm@2x.jpg);
     
         }
     
         @media screen and(min-width: 768px) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__md.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__md.jpg);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__md@2x.jpg);
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__md@2x.jpg);
             }
         }
     
         @media screen and(min-width: 1200px) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__lg.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__lg.jpg);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/retina/hero/hero__lg@2x.jpg);
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/retina/hero/hero__lg@2x.jpg);
             }
         }
 }
  
 .hero__title {
     margin-bottom: 30px;
+    font-weight: 900;
     font-family: Roboto;
     font-size: 44px;
     line-height: 1.5;
