@@ -59,7 +59,7 @@
 
 
         @include mq(mobile-only) {
-        max-width: 450px;}
+        width: 450px;}
         
         @include mq(tablet-only) {
         width: 354px;
