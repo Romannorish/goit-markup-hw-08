@@ -18,8 +18,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-right: 45px;
-
+        margin-right: 55px;
          }
          
         @include mq(desktop){
@@ -29,15 +28,10 @@
     }
 
     &__item {
-        width: 270px;
-        margin-right: 30px;
-        
-
-    }
-
-    &__item {
             width: 270px;
             margin-right: 30px;
+
+        
 
 
     }
@@ -65,7 +59,7 @@
 
 
         @include mq(mobile-only) {
-        width: 450px;}
+        max-width: 450px;}
         
         @include mq(tablet-only) {
         width: 354px;
@@ -73,6 +67,7 @@
 
 
     }
+    
 
     &__icon-svg {
         width: 70px;
