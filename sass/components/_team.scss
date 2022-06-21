@@ -1,6 +1,7 @@
 .team {
     padding: 94px 0px 94px 0px;
     background-color: var(--team-background-color);
+    margin-bottom: -30px;
 
     @include mq(mobile-only){
         padding: 60px 0px;
@@ -19,22 +20,20 @@
             @media screen and (min-width: 480px) {
                 width: 450px;
             }
-    
-            @media screen and (min-width: 768px) {
-                // width: 738px;
+        @include mq(tablet-only) {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                
-            }
+                width: 768px;
+               margin: 0;
+                gap: 30px;
+        }
     
-                        @include mq(tablet-only) {
-                            flex-basis: calc((100% - 3 * 30px) / 2);
-                        }
+                        
 
             @media screen and (min-width: 1200px) {
                 width: 1200px;
-                flex-wrap: nowrap;
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
             }
     
@@ -47,7 +46,9 @@
                 margin-bottom: 30px;
             }
     
-           
+                   @include mq(tablet-only) {
+                    margin-bottom: 0;
+                   }
             
             
         }

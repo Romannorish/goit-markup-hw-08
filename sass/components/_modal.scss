@@ -167,6 +167,9 @@
 
     &__text {
 
+        @include mq(mobile) {
+            @include fonts(null, null, normal, 12px, 1.71, 0.03em)
+        }
 
         @include fonts(null, null, normal, 14px, 1.71, 0.03em)
 

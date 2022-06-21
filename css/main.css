@@ -315,7 +315,7 @@ body {
 }
 
 .hero__title {
-  font-weight: 900;
+  font-weight: 500;
   font-family: Roboto;
   font-size: 44px;
   line-height: 1.5;
@@ -324,6 +324,12 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero__title {
     font-size: 26px;
   }
@@ -519,6 +525,7 @@ body {
 .team {
   padding: 94px 0px 94px 0px;
   background-color: var(--team-background-color);
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -545,24 +552,21 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .team__list {
-    flex-basis: calc((100% - 3 * 30px) / 2);
+    width: 768px;
+    margin: 0;
+    gap: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
     width: 1200px;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -571,6 +575,12 @@ body {
   .team__item {
     width: auto;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__item {
+    margin-bottom: 0;
   }
 }
 
@@ -657,6 +667,7 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -684,7 +695,7 @@ body {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    width: 768px;
   }
 }
 
@@ -716,6 +727,9 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .clients {
     flex-basis: calc((100% - 20px) / 3);
+  }
+  .clients__item:nth-child(4n) {
+    margin-left: 0;
   }
 }
 
@@ -981,6 +995,15 @@ body {
   letter-spacing: 0.03em;
   justify-content: center;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .agreement__text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .agreement__text::before {

@@ -53,7 +53,7 @@
 }
  
 .hero__title {
-    font-weight: 900;
+    font-weight: 500;
     font-family: Roboto;
     font-size: 44px;
     line-height: 1.5;
@@ -63,6 +63,10 @@
 
     @include mq(mobile-only) {
     font-size: 26px;
+    }
+
+    @include mq(tablet-only) {
+        font-size: 26px;
     }
 
 }

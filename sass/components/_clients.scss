@@ -1,6 +1,7 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-bottom: -30px;
 
     @include mq(mobile-only) {
             padding: 60px 0px;
@@ -22,13 +23,13 @@
             @include mq(tablet-only) {
                 display: flex;
                 flex-wrap: wrap;
-
-                
+                width: 768px;
                 
             }
             @include mq(desktop) {
                 display: flex;
                 justify-content: center;
+            
 
             }
         }
@@ -57,6 +58,10 @@
 
                 @include mq(tablet-only){
                 flex-basis: calc((100% - 20px) / 3);
+                &__item:nth-child(4n) {
+                      margin-left: 0;
+                      
+                    }
                 
             }
     
