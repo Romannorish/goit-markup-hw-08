@@ -18,6 +18,7 @@
     
             @media screen and (min-width: 480px) {
                 width: 450px;
+                margin-bottom: -30px;
             }
         @include mq(tablet-only) {
                 display: flex;
@@ -43,6 +44,7 @@
             @media screen and (min-width: 480px) {
                 width: auto;
                 margin-bottom: 30px;
+                
 
                  }
                     @include mq(mobile-only) {
@@ -88,7 +90,7 @@
         letter-spacing: 0.03em;
         color: var(--team);
 
-        @include mq(mobile){
+        @include mq(tablet-only){
             margin-bottom: 30px;
             font-size: 28px
         }

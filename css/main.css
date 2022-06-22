@@ -363,6 +363,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 55px;
+    margin-bottom: -30px;
   }
 }
 
@@ -548,6 +549,7 @@ body {
 @media screen and (min-width: 480px) {
   .team__list {
     width: 450px;
+    margin-bottom: -30px;
   }
 }
 
@@ -616,7 +618,7 @@ body {
   color: var(--team);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__title {
     margin-bottom: 30px;
     font-size: 28px;
@@ -681,7 +683,13 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
+  .clients {
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .clients {
     padding: 60px 0px;
   }
@@ -693,6 +701,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: -15px;
+    margin-bottom: -30px;
   }
 }
 
@@ -701,6 +710,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
+    margin-bottom: -30px;
   }
 }
 
@@ -708,6 +718,7 @@ body {
   .clients__list {
     display: flex;
     justify-content: center;
+    margin-bottom: -30px;
   }
 }
 
@@ -753,7 +764,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .clients__title {
     font-size: 28px;
     margin-bottom: 30px;

@@ -1,11 +1,15 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
             padding: 60px 0px;
         }
 
+                 @include mq(tablet-only) {
+                     padding: 60px 0px;
+                 }
 
         &__list {
             @include mq(mobile-only) {
@@ -13,6 +17,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 margin: -15px;
+                margin-bottom: -30px;
                 
             }
 
@@ -20,12 +25,14 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 768px;
+                margin-bottom: -30px;
+               
                 
             }
             @include mq(desktop) {
                 display: flex;
                 justify-content: center;
-            
+                margin-bottom: -30px;
 
             }
         }
@@ -74,7 +81,7 @@
         color: var(--team-color);
         margin-bottom: 50px;
 
-                @include mq(mobile) {
+                @include mq(tablet-only) {
                     font-size: 28px;
                     margin-bottom: 30px;
                 }
