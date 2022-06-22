@@ -277,7 +277,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
     max-width: 768;
     padding: 118px 0px;
@@ -315,7 +315,7 @@ body {
 }
 
 .hero__title {
-  font-weight: 500;
+  font-weight: 900;
   font-family: Roboto;
   font-size: 44px;
   line-height: 1.5;
@@ -376,6 +376,12 @@ body {
 .features__item {
   width: 270px;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .features__item__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features__item:last-child {
@@ -453,7 +459,6 @@ body {
 
 @media screen and (max-width: 767.98px) {
   .features__text {
-    margin-bottom: 30px;
     width: 450px;
   }
 }
@@ -520,7 +525,6 @@ body {
 .team {
   padding: 94px 0px 94px 0px;
   background-color: var(--team-background-color);
-  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -573,6 +577,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__item {
     margin-bottom: 0;
@@ -604,6 +614,13 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--team);
+}
+
+@media screen and (min-width: 480px) {
+  .team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
 }
 
 .team__name {
@@ -662,16 +679,9 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: -30px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .clients {
-    padding: 60px 0px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px) {
   .clients {
     padding: 60px 0px;
   }
@@ -741,6 +751,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--team-color);
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__link {
@@ -1367,8 +1384,10 @@ body {
 }
 
 /* footer telegram */
-.footer__form {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-left: 93px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1487,15 +1506,15 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .portfolio {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1643,7 +1662,6 @@ body {
 }
 
 .srevies__item {
-  width: 370px;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);

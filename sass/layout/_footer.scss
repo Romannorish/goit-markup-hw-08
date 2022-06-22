@@ -144,7 +144,10 @@
 /* footer telegram */
 
 .footer__form {
-    margin-left: 93px;
+
+    @include mq(desktop){
+        margin-left: 93px;
+    }
 
     @include mq(mobile-only) {
             margin: 0;

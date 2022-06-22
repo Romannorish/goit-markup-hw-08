@@ -1,15 +1,11 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-bottom: -30px;
 
-    @include mq(mobile-only) {
+    @include mq(mobile) {
             padding: 60px 0px;
         }
 
-                @include mq(tablet-only) {
-                    padding: 60px 0px;
-                }
 
         &__list {
             @include mq(mobile-only) {
@@ -77,6 +73,11 @@
         letter-spacing: 0.03em;
         color: var(--team-color);
         margin-bottom: 50px;
+
+                @include mq(mobile) {
+                    font-size: 28px;
+                    margin-bottom: 30px;
+                }
     }
 }
 

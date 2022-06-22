@@ -3,13 +3,13 @@
     padding-bottom: 94px;
 
     @include mq(tablet-only) {
-        padding-top: 66px;
-        padding-bottom: 66px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
     }
         @include mq(mobile-only) {
-            padding-top: 66px;
-            padding-bottom: 66px;
+            padding-top: 60px;
+            padding-bottom: 60px;
     
         }
 
@@ -162,7 +162,7 @@
 
 
 .srevies__item {
-    width: 370px;
+    // width: 370px;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 3 - 30px);

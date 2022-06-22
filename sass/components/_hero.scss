@@ -4,7 +4,7 @@
         padding: 118px 0px;
         }
     
-        @include mq(tablet) {
+        @include mq(tablet-only) {
         max-width: 768;
         padding: 118px 0px;
         }
@@ -53,7 +53,7 @@
 }
  
 .hero__title {
-    font-weight: 500;
+    font-weight: 900;
     font-family: Roboto;
     font-size: 44px;
     line-height: 1.5;
